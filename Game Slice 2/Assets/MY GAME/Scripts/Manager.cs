@@ -6,10 +6,7 @@ using UnityEngine.SceneManagement;
 public class Manager : MonoBehaviour {
 
     [SerializeField] float m_PlayerHealth = 100.0f;
-    // Use this for initialization
-	void Start () {
-		
-	}
+    
 
     public void DecreaseHealth()
     {

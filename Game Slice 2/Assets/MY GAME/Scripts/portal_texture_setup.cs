@@ -12,11 +12,13 @@ public class portal_texture_setup : MonoBehaviour {
 
     void Start () {
 		
+        //adds the other cameras veiw to the plane using a texture
         if(cam_blue_room.targetTexture != null)
         {
             cam_blue_room.targetTexture.Release();
         }
 
+        //renders the texture and sets the size
         cam_blue_room.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
 
         mat_blue_room.mainTexture = cam_blue_room.targetTexture;

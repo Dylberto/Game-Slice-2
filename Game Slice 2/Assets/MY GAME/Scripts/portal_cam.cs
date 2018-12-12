@@ -11,11 +11,12 @@ public class portal_cam : MonoBehaviour {
 	
 	void Update () {
 
-        //other cams position
+
+        // gets the postion of the other camera in the world
         Vector3 player_offset_portal = player_cam.position - other_portal.position;
         transform.position = portal.position + player_offset_portal;
 
-        //other cams rotation
+        // gets the rotation of the other cameras rotation in the world using the same roatation as the main camera
          float angle_diff_bet_rotations = Quaternion.Angle(portal.rotation, other_portal.rotation);
 
          
