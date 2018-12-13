@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Waypoint
+  - Enemy
+  - Axe
+  - fireworks
+  - Spawn
+  - Fire
   layers:
   - Default
   - TransparentFX
