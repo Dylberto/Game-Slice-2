@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class player_interactions : MonoBehaviour {
 
+    
     public bool has_axe = false;
     public bool dead;
 
+    //all triggers the player will trigger
     public GameObject end_portal;
     public GameObject fireworks;
     public GameObject crazy_guy;
@@ -15,6 +17,7 @@ public class player_interactions : MonoBehaviour {
 
     void Start()
     {
+        //sets all objects to off until player triggers them
         fireworks.SetActive(false);
         end_portal.SetActive(false);
         crazy_guy.SetActive(false);
@@ -23,6 +26,7 @@ public class player_interactions : MonoBehaviour {
 
     }
 
+    //triggers if player collides with "x" something will tunrn on/trigger
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Axe")
